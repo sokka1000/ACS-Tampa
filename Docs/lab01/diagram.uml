@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1798.535555990954" y="469.6167714607843">netscape</node>
+    <node x="464.416909788745" y="112.0984679854578">META-INF</node>
+    <node x="1677.006596514948" y="317.95222443572607">javafx</node>
+    <node x="582.0429367119602" y="245.5868079362907">org</node>
+    <node x="381.0117946427506" y="399.86612600396876">images</node>
+    <node x="1200.4737604653155" y="317.8763436879526">impl</node>
+    <node x="323.21735681970927" y="296.8005274015277">groovyjarjarasm</node>
+    <node x="689.8213972286617" y="142.69516746712503">javax</node>
+    <node x="1493.221218020434" y="406.3541584919922">fxml</node>
+    <node x="1056.8141894136338" y="145.12923012049063">toolbarButtonGraphics</node>
+    <node x="183.7588801275349" y="207.0531161654487">groovyjarjarpicocli</node>
+    <node x="1386.9626849477982" y="241.6281593389997">groovy</node>
+    <node x="737.8034689183073" y="13.333024988062476">groovyjarjarantlr</node>
+    <node x="765.779825787439" y="251.48507279861678">jdk</node>
+    <node x="990.1062678225057" y="251.48507279861678">tasks</node>
+    <node x="875.8348369913834" y="102.88540037060362">java</node>
+    <node x="0.09870770845645893" y="280.74856687278776">com</node>
+    <node x="144.9009277140775" y="381.83937170021164">sun</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="0.5898477157360406" showDependencies="true" x="1140.2015207616164" y="319.7735298515488" />
+  <SelectedNodes>
+    <node>tasks</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
