@@ -13,6 +13,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import tasks.exceptions.ExceptionIO;
 import tasks.model.Task;
 import tasks.services.DateService;
 import tasks.services.TaskIO;
@@ -38,7 +39,7 @@ public class Controller {
     @FXML
     public  TableView tasks;
     @FXML
-    private TableColumn<Task, String> columnTitle;
+    private TableColumn<Task, String> columnDescription;
     @FXML
     private TableColumn<Task, String> columnTime;
     @FXML
@@ -72,7 +73,7 @@ public class Controller {
     @FXML
     public void initialize(){
         log.info("Main controller initializing");
-        columnTitle.setCellValueFactory(new PropertyValueFactory<>("title"));
+        columnDescription.setCellValueFactory(new PropertyValueFactory<>("description"));
         columnTime.setCellValueFactory(new PropertyValueFactory<>("formattedDateStart"));
         columnRepeated.setCellValueFactory(new PropertyValueFactory<>("formattedRepeated"));
     }
@@ -108,7 +109,11 @@ public class Controller {
     public void deleteTask(){
         Task toDelete = (Task)tasks.getSelectionModel().getSelectedItem();
         tasksList.remove(toDelete);
-        TaskIO.rewriteFile(tasksList);
+        try {
+            TaskIO.rewriteFile(tasksList);
+        } catch (ExceptionIO e) {
+            log.error(e.getMessage());
+        }
     }
     @FXML
     public void showDetailedInfo(){
@@ -129,14 +134,36 @@ public class Controller {
     }
     @FXML
     public void showFilteredTasks(){
-        Date start = getDateFromFilterField(datePickerFrom.getValue(), fieldTimeFrom.getText());
-        Date end = getDateFromFilterField(datePickerTo.getValue(), fieldTimeTo.getText());
+        try {
 
-        Iterable<Task> filtered =  service.filterTasks(start, end);
+            Date start = getDateFromFilterField(datePickerFrom.getValue(), fieldTimeFrom.getText());
+            Date end = getDateFromFilterField(datePickerTo.getValue(), fieldTimeTo.getText());
 
-        ObservableList<Task> observableTasks = FXCollections.observableList((ArrayList)filtered);
-        tasks.setItems(observableTasks);
-        updateCountLabel(observableTasks);
+            Date startDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerFrom.getValue());//ONLY date!!without time
+            Date endDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerFrom.getValue());//ONLY date!!without time
+            Date dateStart = dateService.getDateMergedWithTime(fieldTimeFrom.getText(),startDateWithNoTime);
+            Date dateEnd = dateService.getDateMergedWithTime( fieldTimeTo.getText(),endDateWithNoTime);
+
+
+            Iterable<Task> filtered = service.filterTasks(start, end);
+
+            ObservableList<Task> observableTasks = FXCollections.observableList((ArrayList) filtered);
+            tasks.setItems(observableTasks);
+            updateCountLabel(observableTasks);
+
+        }
+        catch (Exception exception) {
+            try {
+                Stage stage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/field-validator.fxml"));
+                stage.setScene(new Scene(root, 350, 150));
+                stage.setResizable(false);
+                stage.initModality(Modality.APPLICATION_MODAL);
+                stage.show();
+            }
+            catch (IOException ioe){
+                log.error("error loading field-validator.fxml");
+            }}
     }
     private Date getDateFromFilterField(LocalDate localDate, String time){
         Date date = dateService.getDateValueFromLocalDate(localDate);

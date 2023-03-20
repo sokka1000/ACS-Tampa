@@ -2,6 +2,7 @@ package tasks.services;
 
 import javafx.collections.ObservableList;
 import org.apache.log4j.Logger;
+import tasks.exceptions.ExceptionIO;
 import tasks.model.LinkedTaskList;
 import tasks.model.Task;
 import tasks.model.TaskList;
@@ -25,8 +26,8 @@ public class TaskIO {
         try {
             dataOutputStream.writeInt(tasks.size());
             for (Task t : tasks){
-                dataOutputStream.writeInt(t.getTitle().length());
-                dataOutputStream.writeUTF(t.getTitle());
+                dataOutputStream.writeInt(t.getDescription().length());
+                dataOutputStream.writeUTF(t.getDescription());
                 dataOutputStream.writeBoolean(t.isActive());
                 dataOutputStream.writeInt(t.getRepeatInterval());
                 if (t.isRepeated()){
@@ -68,28 +69,28 @@ public class TaskIO {
             dataInputStream.close();
         }
     }
-    public static void writeBinary(TaskList tasks, File file)throws IOException{
+    public static void writeBinary(TaskList tasks, File file) throws IOException, ExceptionIO {
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(file);
             write(tasks,fos);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            throw new ExceptionIO("IO exception writing file");
         }
         finally {
             fos.close();
         }
     }
 
-    public static void readBinary(TaskList tasks, File file) throws IOException{
+    public static void readBinary(TaskList tasks, File file) throws IOException, ExceptionIO {
         FileInputStream fis = null;
         try {
             fis = new FileInputStream(file);
             read(tasks, fis);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            throw new ExceptionIO("IO exception reading file");
         }
         finally {
             fis.close();
@@ -118,13 +119,13 @@ public class TaskIO {
         reader.close();
 
     }
-    public static void writeText(TaskList tasks, File file) throws IOException {
+    public static void writeText(TaskList tasks, File file) throws IOException, ExceptionIO {
         FileWriter fileWriter = new FileWriter(file);
         try {
             write(tasks, fileWriter);
         }
         catch (IOException e ){
-            log.error("IO exception reading or writing file");
+            throw new ExceptionIO("IO exception writing file");
         }
         finally {
             fileWriter.close();
@@ -241,7 +242,7 @@ public class TaskIO {
     ////service methods for writing
     private static String getFormattedTask(Task task){
         StringBuilder result = new StringBuilder();
-        String title = task.getTitle();
+        String title = task.getDescription();
         if (title.contains("\"")) title = title.replace("\"","\"\"");
         result.append("\"").append(title).append("\"");
 
@@ -287,7 +288,7 @@ public class TaskIO {
     }
 
 
-    public static void rewriteFile(ObservableList<Task> tasksList) {
+    public static void rewriteFile(ObservableList<Task> tasksList) throws ExceptionIO {
         LinkedTaskList taskList = new LinkedTaskList();
         for (Task t : tasksList){
             taskList.add(t);
@@ -296,7 +297,7 @@ public class TaskIO {
             TaskIO.writeBinary(taskList, Main.savedTasksFile);
         }
         catch (IOException e){
-            log.error("IO exception reading or writing file");
+            throw new ExceptionIO("IO exception writing file");
         }
     }
 }

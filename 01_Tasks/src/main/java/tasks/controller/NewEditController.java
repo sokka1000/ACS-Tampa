@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import tasks.exceptions.ExceptionIO;
 import tasks.model.Task;
 import tasks.services.DateService;
 import tasks.services.TaskIO;
@@ -47,7 +48,7 @@ public class NewEditController {
 
     private boolean incorrectInputMade;
     @FXML
-    private TextField fieldTitle;
+    private TextField fieldDescription;
     @FXML
     private DatePicker datePickerStart;
     @FXML
@@ -104,20 +105,23 @@ public class NewEditController {
 
     private void initEditWindow(String title){
         currentStage.setTitle(title);
-        fieldTitle.setText(currentTask.getTitle());
-        datePickerStart.setValue(dateService.getLocalDateValueFromDate(currentTask.getStartTime()));
-        txtFieldTimeStart.setText(dateService.getTimeOfTheDayFromDate(currentTask.getStartTime()));
+        if(currentTask!=null) {
+            fieldDescription.setText(currentTask.getDescription());
+            datePickerStart.setValue(dateService.getLocalDateValueFromDate(currentTask.getStartTime()));
+            txtFieldTimeStart.setText(dateService.getTimeOfTheDayFromDate(currentTask.getStartTime()));
 
-        if (currentTask.isRepeated()){
-            checkBoxRepeated.setSelected(true);
-            hideRepeatedTaskModule(false);
-            datePickerEnd.setValue(dateService.getLocalDateValueFromDate(currentTask.getEndTime()));
-            fieldInterval.setText(service.getIntervalInHours(currentTask));
-            txtFieldTimeEnd.setText(dateService.getTimeOfTheDayFromDate(currentTask.getEndTime()));
-        }
-        if (currentTask.isActive()){
-            checkBoxActive.setSelected(true);
 
+            if (currentTask.isRepeated()) {
+                checkBoxRepeated.setSelected(true);
+                hideRepeatedTaskModule(false);
+                datePickerEnd.setValue(dateService.getLocalDateValueFromDate(currentTask.getEndTime()));
+                fieldInterval.setText(service.getIntervalInHours(currentTask));
+                txtFieldTimeEnd.setText(dateService.getTimeOfTheDayFromDate(currentTask.getEndTime()));
+            }
+            if (currentTask.isActive()) {
+                checkBoxActive.setSelected(true);
+
+            }
         }
     }
     @FXML
@@ -156,7 +160,11 @@ public class NewEditController {
             }
             currentTask = null;
         }
-        TaskIO.rewriteFile(tasksList);
+        try {
+            TaskIO.rewriteFile(tasksList);
+        } catch (ExceptionIO e) {
+            log.error(e.getMessage());
+        }
         Controller.editNewStage.close();
     }
     @FXML
@@ -189,7 +197,7 @@ public class NewEditController {
 
     private Task makeTask(){
         Task result;
-        String newTitle = fieldTitle.getText();
+        String newTitle = fieldDescription.getText();
         Date startDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerStart.getValue());//ONLY date!!without time
         Date newStartDate = dateService.getDateMergedWithTime(txtFieldTimeStart.getText(), startDateWithNoTime);
         if (checkBoxRepeated.isSelected()){

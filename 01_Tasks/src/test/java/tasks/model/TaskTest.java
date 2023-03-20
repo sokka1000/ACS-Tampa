@@ -5,9 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
-import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class TaskTest {
 
@@ -16,7 +13,7 @@ class TaskTest {
     @BeforeEach
     void setUp() {
         try {
-            task=new Task("new task",Task.getDateFormat().parse("2023-02-12 10:10"));
+            task=new Task("new task",task.getDateFormat().parse("2023-02-12 10:10"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -24,10 +21,10 @@ class TaskTest {
 
     @Test
     void testTaskCreation() throws ParseException {
-       assert task.getTitle() == "new task";
+       assert task.getDescription() == "new task";
         System.out.println(task.getFormattedDateStart());
-        System.out.println(task.getDateFormat().format(Task.getDateFormat().parse("2023-02-12 10:10")));
-       assert task.getFormattedDateStart().equals(task.getDateFormat().format(Task.getDateFormat().parse("2023-02-12 10:10")));
+        System.out.println(task.getDateFormat().format(task.getDateFormat().parse("2023-02-12 10:10")));
+       assert task.getFormattedDateStart().equals(task.getDateFormat().format(task.getDateFormat().parse("2023-02-12 10:10")));
 
     }
 
