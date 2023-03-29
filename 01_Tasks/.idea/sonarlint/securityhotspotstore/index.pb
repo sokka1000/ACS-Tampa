@@ -13,8 +13,6 @@ W
 'src/main/java/tasks/model/TaskList.java,f\c\fc2a13256c261b5abd00e9188b5f42e29358bf6e
 ^
 .src/main/java/tasks/services/TasksService.java,7\d\7d63de46d8ec7dacaab386b187106455df813537
-S
-#src/main/java/tasks/model/Task.java,6\6\665dec39384a747ccf12fd544bf02f4a3d18695a
 R
 "src/main/java/tasks/view/Main.java,a\4\a4e952c1a4765c6cf9a337826a42d32c3f95db7f
 f

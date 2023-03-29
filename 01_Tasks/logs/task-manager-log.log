@@ -235,3 +235,11 @@
 2023-03-29 18:05:27 ERROR Task:46 - interval < than 1
 2023-03-29 18:05:27 ERROR Task:42 - start date is in the past
 2023-03-29 18:05:27 ERROR Task:42 - start date is in the past
+2023-03-29 18:49:23 INFO  Main:36 - saved data reading
+2023-03-29 18:49:23 ERROR Task:47 - start date is in the past
+2023-03-29 18:49:28 INFO  Main:36 - saved data reading
+2023-03-29 18:49:28 INFO  Main:41 - application start
+2023-03-29 18:49:28 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:49:42 INFO  Main:36 - saved data reading
+2023-03-29 18:49:42 INFO  Main:41 - application start
+2023-03-29 18:49:42 INFO  Controller:75 - Main controller initializing

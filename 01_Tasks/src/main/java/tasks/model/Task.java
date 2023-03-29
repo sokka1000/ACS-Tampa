@@ -28,6 +28,11 @@ public class Task implements Serializable, Cloneable {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
         }
+        if (time.before(new Date()))
+        {
+            log.error("start date is in the past");
+            throw new IllegalArgumentException("start date should be from current date on");
+        }
         this.description = description;
         this.start = time;
         this.end = time;
