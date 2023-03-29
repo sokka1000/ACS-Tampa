@@ -187,3 +187,51 @@
 2023-03-20 21:30:21 INFO  Controller:75 - Main controller initializing
 2023-03-20 21:30:24 INFO  TaskInfoController:26 - task info window initializing
 2023-03-20 21:30:27 INFO  TaskInfoController:26 - task info window initializing
+2023-03-29 15:23:23 ERROR Task:35 - time below bound
+2023-03-29 15:23:23 ERROR Task:35 - time below bound
+2023-03-29 15:26:51 ERROR Task:35 - time below bound
+2023-03-29 15:26:51 ERROR Task:35 - time below bound
+2023-03-29 15:27:21 ERROR Task:35 - time below bound
+2023-03-29 15:27:21 ERROR Task:35 - time below bound
+2023-03-29 15:30:44 ERROR Task:35 - time below bound
+2023-03-29 15:30:44 ERROR Task:35 - time below bound
+2023-03-29 15:33:09 ERROR Task:35 - time below bound
+2023-03-29 15:33:09 ERROR Task:35 - time below bound
+2023-03-29 17:08:44 ERROR Task:35 - time below bound
+2023-03-29 17:08:44 ERROR Task:35 - time below bound
+2023-03-29 17:27:03 ERROR Task:42 - start date is in the past
+2023-03-29 17:30:00 ERROR Task:42 - start date is in the past
+2023-03-29 17:30:31 ERROR Task:42 - start date is in the past
+2023-03-29 17:32:19 ERROR Task:42 - start date is in the past
+2023-03-29 17:42:37 ERROR Task:42 - start date is in the past
+2023-03-29 17:44:48 ERROR Task:42 - start date is in the past
+2023-03-29 17:45:06 ERROR Task:42 - start date is in the past
+2023-03-29 17:49:44 ERROR Task:46 - interval < than 1
+2023-03-29 17:49:56 ERROR Task:46 - interval < than 1
+2023-03-29 17:50:25 ERROR Task:42 - start date is in the past
+2023-03-29 17:50:25 ERROR Task:42 - start date is in the past
+2023-03-29 17:52:04 ERROR Task:42 - start date is in the past
+2023-03-29 17:52:04 ERROR Task:42 - start date is in the past
+2023-03-29 17:52:46 ERROR Task:42 - start date is in the past
+2023-03-29 17:52:46 ERROR Task:42 - start date is in the past
+2023-03-29 17:54:42 ERROR Task:42 - start date is in the past
+2023-03-29 17:54:42 ERROR Task:42 - start date is in the past
+2023-03-29 17:54:42 ERROR Task:42 - start date is in the past
+2023-03-29 17:54:42 ERROR Task:42 - start date is in the past
+2023-03-29 17:56:21 ERROR Task:42 - start date is in the past
+2023-03-29 17:56:21 ERROR Task:42 - start date is in the past
+2023-03-29 17:57:08 ERROR Task:42 - start date is in the past
+2023-03-29 17:57:08 ERROR Task:42 - start date is in the past
+2023-03-29 17:57:23 ERROR Task:42 - start date is in the past
+2023-03-29 17:57:23 ERROR Task:42 - start date is in the past
+2023-03-29 17:58:04 ERROR Task:46 - interval < than 1
+2023-03-29 17:58:04 ERROR Task:42 - start date is in the past
+2023-03-29 17:58:04 ERROR Task:42 - start date is in the past
+2023-03-29 18:04:53 ERROR Task:46 - interval < than 1
+2023-03-29 18:04:53 ERROR Task:42 - start date is in the past
+2023-03-29 18:04:53 ERROR Task:42 - start date is in the past
+2023-03-29 18:05:15 ERROR Task:42 - start date is in the past
+2023-03-29 18:05:15 ERROR Task:42 - start date is in the past
+2023-03-29 18:05:27 ERROR Task:46 - interval < than 1
+2023-03-29 18:05:27 ERROR Task:42 - start date is in the past
+2023-03-29 18:05:27 ERROR Task:42 - start date is in the past

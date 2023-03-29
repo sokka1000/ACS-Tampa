@@ -1,10 +1,12 @@
 package tasks.model;
 
+import javafx.util.converter.LocalDateStringConverter;
 import org.apache.log4j.Logger;
 import tasks.services.TaskIO;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Task implements Serializable, Cloneable {
@@ -34,6 +36,11 @@ public class Task implements Serializable, Cloneable {
         if (start.getTime() < 0 || end.getTime() < 0) {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
+        }
+        if (start.before(new Date()))
+        {
+            log.error("start date is in the past");
+            throw new IllegalArgumentException("start date should be from current date on");
         }
         if (interval < 1) {
             log.error("interval < than 1");
