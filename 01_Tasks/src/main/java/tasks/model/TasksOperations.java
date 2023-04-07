@@ -12,6 +12,11 @@ public class TasksOperations {
         tasks=new ArrayList<>();
         tasks.addAll(tasksList);
     }
+    public ArrayList<Task> getAllTasks()
+    {
+        return tasks;
+    }
+
     public Iterable<Task> incoming(Date start, Date end){
         System.out.println(start);
         System.out.println(end);
