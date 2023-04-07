@@ -7,14 +7,8 @@ W
 -src/main/java/tasks/model/LinkedTaskList.java,e\0\e0863ceba847dbe828ffdd5fa8207144974e4dc8
 _
 /src/main/java/tasks/exceptions/ExceptionIO.java,7\5\753fc982de48eb4e6a60e607c0c2fce2f30aa1d4
-^
-.src/main/java/tasks/model/TasksOperations.java,4\f\4f01b9f8917f794cdf589fb86ab1f8dec2bc64a1
 W
 'src/main/java/tasks/model/TaskList.java,f\c\fc2a13256c261b5abd00e9188b5f42e29358bf6e
-^
-.src/main/java/tasks/services/TasksService.java,7\d\7d63de46d8ec7dacaab386b187106455df813537
-R
-"src/main/java/tasks/view/Main.java,a\4\a4e952c1a4765c6cf9a337826a42d32c3f95db7f
 f
 6src/main/java/tasks/controller/TaskInfoController.java,9\9\99b511d75f317e72fa25245b579d48cb3d074646
 ^
