@@ -27,18 +27,29 @@ class IncomingPeriodTaskTest {
     @Test
     void incoming_WBT_Valid() throws ParseException {
         ArrayTaskList tasks = new ArrayTaskList();
-        tasks.add(new Task("alabala", sdf.parse("2023-09-09 08:00"), sdf.parse("2022-09-09 09:00"), 20));
-        tasks.add(new Task("alabala", sdf.parse("2023-08-09 08:00"), sdf.parse("2022-08-09 09:00"), 20));
-        tasks.add(new Task("alabala", sdf.parse("2023-08-15 08:00"), sdf.parse("2022-08-15 09:00"), 20));
+        Task task1 = new Task("alabala", sdf.parse("2023-09-09 08:00"), sdf.parse("2023-09-09 09:00"), 20);
+        task1.setActive(true);
+        tasks.add(task1);
+
+        Task task2 = new Task("alabala", sdf.parse("2023-08-09 08:00"), sdf.parse("2023-08-09 09:00"), 20);
+        task2.setActive(true);
+        tasks.add(task2);
+
+        Task task3 = new Task("alabala", sdf.parse("2023-08-15 08:00"), sdf.parse("2023-08-15 09:00"), 20);
+        task3.setActive(true);
+        tasks.add(task3);
+
         ObservableList<Task> observableList = FXCollections.observableArrayList(tasks.getAll());
         TasksOperations tasksOperations = new TasksOperations(observableList);
         Iterable<Task> tasks1 = tasksOperations.incoming(sdf.parse("2023-08-10 08:00"),sdf.parse("2023-10-01 08:00"));
+
+
         int count = 0;
         for (Task task : tasks1)
         {
             count++;
         }
-        System.out.println(count);
+        //System.out.println(count);
         assert ( count == 2);
         assert (tasksOperations.getAllTasks().size() == 3);
     }
