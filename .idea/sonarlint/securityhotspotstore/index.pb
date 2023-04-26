@@ -9,13 +9,3 @@ G
 01_Tasks/data/tasks.txt,2\d\2d65d404abdc25cfad824286324229c7a3a452f6
 i
 901_Tasks/src/test/java/tasks/model/ArrayTaskListTest.java,9\1\914f25dea2186f14dbcc63b5c210afbaa34a7ad4
-[
-+01_Tasks/src/main/java/tasks/view/Main.java,c\9\c98ef7550444ee2d21b3d91019cc241630b5a260
-\
-,01_Tasks/src/main/java/tasks/model/Task.java,5\7\57f6a6d148092624846e4cfc1b3e95d8b35a15ba
-f
-601_Tasks/src/main/java/tasks/model/LinkedTaskList.java,6\6\66778a9ccdecf0c1f4b1cdc12a6228e838b7bb0c
-e
-501_Tasks/src/main/java/tasks/model/ArrayTaskList.java,f\d\fd3e6e8decfc3e35245c4a1ca902313b0f306236
-g
-701_Tasks/src/main/java/tasks/model/TasksOperations.java,d\1\d1dd47ae9a8372b364da55385ff9cba3ac85f4ee

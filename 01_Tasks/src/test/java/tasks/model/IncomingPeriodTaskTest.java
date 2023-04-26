@@ -36,7 +36,7 @@ class IncomingPeriodTaskTest {
         task2.setActive(true);
         tasks.add(task2);
 
-        Task task3 = new Task("alabala", sdf.parse("2023-08-15 08:00"), sdf.parse("2023-08-15 09:00"), 20);
+        Task task3 = new Task("alabala", sdf.parse("2023-08-15 08:00"), sdf.parse("2023-08-15 09:00"));
         task3.setActive(true);
         tasks.add(task3);
 

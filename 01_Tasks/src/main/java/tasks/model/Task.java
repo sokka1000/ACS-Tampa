@@ -36,6 +36,7 @@ public class Task implements Serializable, Cloneable {
         this.description = description;
         this.start = time;
         this.end = time;
+        this.interval = 0;
     }
     public Task(String description, Date start, Date end, int interval){
         if (start.getTime() < 0 || end.getTime() < 0) {
@@ -49,12 +50,28 @@ public class Task implements Serializable, Cloneable {
         }
         if (interval < 1) {
             log.error("interval < than 1");
-            throw new IllegalArgumentException("interval should me > 1");
+            throw new IllegalArgumentException("interval should be > 1");
         }
         this.description = description;
         this.start = start;
         this.end = end;
         this.interval = interval;
+    }
+
+    public Task(String description, Date start, Date end){
+        if (start.getTime() < 0 || end.getTime() < 0) {
+            log.error("time below bound");
+            throw new IllegalArgumentException("Time cannot be negative");
+        }
+        if (start.before(new Date()))
+        {
+            log.error("start date is in the past");
+            throw new IllegalArgumentException("start date should be from current date on");
+        }
+        this.description = description;
+        this.start = start;
+        this.end = end;
+        this.interval = 0;
     }
 
     public String getDescription() {
@@ -86,7 +103,6 @@ public class Task implements Serializable, Cloneable {
 
     public boolean isRepeated(){
         return this.interval != 0;
-
     }
 
     private Date f2(Date current,Date timeAfter,Date timeBefore){

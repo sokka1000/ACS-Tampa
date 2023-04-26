@@ -262,3 +262,5 @@
 2023-04-07 09:12:21 INFO  Main:36 - saved data reading
 2023-04-07 09:12:21 INFO  Main:41 - application start
 2023-04-07 09:12:21 INFO  Controller:75 - Main controller initializing
+2023-04-26 14:40:11 ERROR Task:51 - interval < than 1
+2023-04-26 14:42:28 ERROR Task:72 - interval < than 1

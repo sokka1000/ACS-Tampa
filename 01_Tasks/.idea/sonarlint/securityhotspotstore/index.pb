@@ -23,3 +23,17 @@ a
 1src/test/java/tasks/services/DateServiceTest.java,e\b\eb67f05314178cc6b3a1e4f981a808f271e00c26
 I
 logs/task-manager-log.log,0\9\0959973df7556b24c6d773e780902c3037687e4c
+W
+'src/test/java/tasks/model/TaskTest.java,3\1\31324894a484d06adcd87a923fb98e2c49cb815e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+`
+0src/test/java/tasks/model/ArrayTaskListTest.java,b\b\bb3e361b5340906294280c0a5d14d44253f55be2
+S
+#src/main/java/tasks/model/Task.java,6\6\665dec39384a747ccf12fd544bf02f4a3d18695a
+^
+.src/main/java/tasks/model/TasksOperations.java,4\f\4f01b9f8917f794cdf589fb86ab1f8dec2bc64a1
+e
+5src/test/java/tasks/model/IncomingPeriodTaskTest.java,5\4\54fc3eac01a5c0e76e73557d2e2a88733f04210b
