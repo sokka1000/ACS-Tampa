@@ -1,6 +1,4 @@
 
-W
-'src/test/java/tasks/model/TaskTest.java,3\1\31324894a484d06adcd87a923fb98e2c49cb815e
 _
 /src/main/java/tasks/exceptions/ExceptionIO.java,7\5\753fc982de48eb4e6a60e607c0c2fce2f30aa1d4
 \
@@ -21,3 +19,7 @@ _
 -src/main/java/tasks/services/DateService.java,b\a\ba27869b1e0ea8fe162ea3b4618a07816f29da05
 X
 (src/main/java/tasks/services/TaskIO.java,2\6\26c7ae39591499fab3685c25bb4834dc2fc7cf24
+a
+1src/test/java/tasks/services/DateServiceTest.java,e\b\eb67f05314178cc6b3a1e4f981a808f271e00c26
+I
+logs/task-manager-log.log,0\9\0959973df7556b24c6d773e780902c3037687e4c

@@ -19,7 +19,6 @@ class ArrayTaskListTest {
 
     @BeforeEach
     void setUp() {
-
     }
 
     @AfterEach

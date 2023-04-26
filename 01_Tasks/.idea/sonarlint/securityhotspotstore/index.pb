@@ -1,8 +1,6 @@
 
 \
 ,src/main/java/tasks/model/ArrayTaskList.java,f\7\f77a2442ed82eb8b7386f5c9a49162f894ad8a61
-W
-'src/test/java/tasks/model/TaskTest.java,3\1\31324894a484d06adcd87a923fb98e2c49cb815e
 ]
 -src/main/java/tasks/model/LinkedTaskList.java,e\0\e0863ceba847dbe828ffdd5fa8207144974e4dc8
 _
@@ -21,3 +19,7 @@ _
 -src/main/java/tasks/services/DateService.java,b\a\ba27869b1e0ea8fe162ea3b4618a07816f29da05
 X
 (src/main/java/tasks/services/TaskIO.java,2\6\26c7ae39591499fab3685c25bb4834dc2fc7cf24
+a
+1src/test/java/tasks/services/DateServiceTest.java,e\b\eb67f05314178cc6b3a1e4f981a808f271e00c26
+I
+logs/task-manager-log.log,0\9\0959973df7556b24c6d773e780902c3037687e4c
