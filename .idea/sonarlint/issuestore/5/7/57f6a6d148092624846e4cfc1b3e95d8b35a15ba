@@ -1,0 +1,9 @@
+
+x
+java:S4144ˆ"\Update this method so that its implementation is not identical to "getStartTime" on line 76.(‡¬ñ¤ýÿÿÿÿ
+o
+java:S2975À"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(®Ç‹¹þÿÿÿÿ
+a
+java:S1128"KRemove this unused import 'javafx.util.converter.LocalDateStringConverter'.(¦þåâ
+O
+java:S1128	"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ
