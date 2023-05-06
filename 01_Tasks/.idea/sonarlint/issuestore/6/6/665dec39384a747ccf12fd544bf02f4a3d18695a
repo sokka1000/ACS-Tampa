@@ -1,0 +1,19 @@
+
+Œ
+java:S11924"jDefine a constant instead of duplicating this literal "start date should be from current date on" 3 times.(°Àî£şÿÿÿÿ8€’—äş0
+s
+java:S1192."QDefine a constant instead of duplicating this literal "time below bound" 3 times.(¬¼ãâøÿÿÿÿ8€’—äş0
+u
+java:S1192/"XDefine a constant instead of duplicating this literal "Time cannot be negative" 3 times.(¼œüê8€’—äş0
+w
+java:S11923"ZDefine a constant instead of duplicating this literal "start date is in the past" 3 times.(“Ÿ°8€’—äş0
+‡
+java:S4165¡"dRemove this useless assignment; "result" already holds the assigned value along all execution paths.(‘óÖıÿÿÿÿ8­’—äş0
+€
+java:S4144¬"]Update this method so that its implementation is not identical to "getStartTime" on line 112.(‡¬ñ¤ıÿÿÿÿ8¯’—äş0
+v
+java:S2975ä"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(®Ç‹¹şÿÿÿÿ8èúÊäş0
+h
+java:S1128"KRemove this unused import 'javafx.util.converter.LocalDateStringConverter'.(¦şåâ8êúÊäş0
+V
+java:S1128	"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8êúÊäş0
