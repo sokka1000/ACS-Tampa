@@ -264,3 +264,41 @@
 2023-04-07 09:12:21 INFO  Controller:75 - Main controller initializing
 2023-04-26 14:40:11 ERROR Task:51 - interval < than 1
 2023-04-26 14:42:28 ERROR Task:72 - interval < than 1
+2023-05-05 17:42:15 ERROR Task:33 - start date is in the past
+2023-05-05 17:42:15 ERROR Task:28 - time below bound
+2023-05-05 17:43:37 ERROR Task:33 - start date is in the past
+2023-05-05 17:43:37 ERROR Task:28 - time below bound
+2023-05-05 17:44:04 ERROR Task:33 - start date is in the past
+2023-05-05 17:44:04 ERROR Task:28 - time below bound
+2023-05-05 18:28:18 ERROR Task:33 - start date is in the past
+2023-05-05 18:28:18 ERROR Task:28 - time below bound
+2023-05-05 18:28:56 ERROR Task:33 - start date is in the past
+2023-05-05 18:28:56 ERROR Task:28 - time below bound
+2023-05-06 09:13:05 ERROR Task:71 - interval < than 1
+2023-05-06 09:13:05 ERROR Task:67 - start date is in the past
+2023-05-06 09:13:05 ERROR Task:67 - start date is in the past
+2023-05-06 09:13:06 ERROR Task:51 - start date is in the past
+2023-05-06 09:13:06 ERROR Task:46 - time below bound
+2023-05-06 09:14:49 ERROR Task:71 - interval < than 1
+2023-05-06 09:14:49 ERROR Task:67 - start date is in the past
+2023-05-06 09:14:49 ERROR Task:67 - start date is in the past
+2023-05-06 09:14:49 ERROR Task:51 - start date is in the past
+2023-05-06 09:14:50 ERROR Task:51 - start date is in the past
+2023-05-06 09:14:50 ERROR Task:46 - time below bound
+2023-05-06 09:15:15 ERROR Task:71 - interval < than 1
+2023-05-06 09:15:15 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:15 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:15 ERROR Task:51 - start date is in the past
+2023-05-06 09:15:15 ERROR Task:51 - start date is in the past
+2023-05-06 09:15:15 ERROR Task:46 - time below bound
+2023-05-06 09:15:27 ERROR Task:71 - interval < than 1
+2023-05-06 09:15:27 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:27 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:27 ERROR Task:51 - start date is in the past
+2023-05-06 09:15:28 ERROR Task:51 - start date is in the past
+2023-05-06 09:15:28 ERROR Task:46 - time below bound
+2023-05-06 09:15:45 ERROR Task:71 - interval < than 1
+2023-05-06 09:15:45 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:45 ERROR Task:67 - start date is in the past
+2023-05-06 09:15:46 ERROR Task:51 - start date is in the past
+2023-05-06 09:15:46 ERROR Task:46 - time below bound
