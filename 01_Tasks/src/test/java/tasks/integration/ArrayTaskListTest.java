@@ -24,7 +24,7 @@ class ArrayTaskListTest {
     }
 
     @Test
-    void addTest(){
+    void addTaskTest(){
         ArrayTaskList arrayTaskList=new ArrayTaskList();
         arrayTaskList.add(task1);
         arrayTaskList.add(task2);
@@ -33,7 +33,7 @@ class ArrayTaskListTest {
         assertEquals(tasksService.getObservableList().size(),2);
     }
     @Test
-    void removeTest(){
+    void removeTaskTest(){
         ArrayTaskList arrayTaskList=new ArrayTaskList();
         arrayTaskList.add(task1);
         arrayTaskList.add(task2);
