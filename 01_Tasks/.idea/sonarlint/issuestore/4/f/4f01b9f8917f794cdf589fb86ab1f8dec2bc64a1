@@ -1,0 +1,11 @@
+
+€
+java:S1319	"eThe type of "tasks" should be an interface such as "List" rather than the implementation "ArrayList".(±ø¢Èûÿÿÿÿ
+†
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(•–Ì¦
+l
+java:S1104	"QMake tasks a static final constant or non-public and provide accessors if needed.(±ø¢Èûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Á™ËØøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¥Ìäƒúÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ØÍµŠ
+]	java:S125#"<This block of commented-out lines of code should be removed.(‘“¥¦þÿÿÿÿ8¯è‚ëû0

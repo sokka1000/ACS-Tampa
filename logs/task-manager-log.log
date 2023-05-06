@@ -1,0 +1,50 @@
+2023-03-29 18:37:45 INFO  Main:36 - saved data reading
+2023-03-29 18:37:45 INFO  Main:41 - application start
+2023-03-29 18:37:45 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:37:47 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:38:00 INFO  Main:36 - saved data reading
+2023-03-29 18:38:00 INFO  Main:41 - application start
+2023-03-29 18:38:00 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:38:50 INFO  Main:36 - saved data reading
+2023-03-29 18:38:50 INFO  Main:41 - application start
+2023-03-29 18:38:50 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:38:53 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:40:57 INFO  Main:36 - saved data reading
+2023-03-29 18:40:57 INFO  Main:41 - application start
+2023-03-29 18:40:57 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:41:33 INFO  Main:36 - saved data reading
+2023-03-29 18:41:33 INFO  Main:41 - application start
+2023-03-29 18:41:33 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:41:36 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:42:01 INFO  Main:36 - saved data reading
+2023-03-29 18:42:01 INFO  Main:41 - application start
+2023-03-29 18:42:01 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:42:03 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:48:24 INFO  Main:36 - saved data reading
+2023-03-29 18:48:24 INFO  Main:41 - application start
+2023-03-29 18:48:24 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:48:30 INFO  Main:36 - saved data reading
+2023-03-29 18:48:30 INFO  Main:41 - application start
+2023-03-29 18:48:30 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:53:46 INFO  Main:36 - saved data reading
+2023-03-29 18:53:46 INFO  Main:41 - application start
+2023-03-29 18:53:46 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:53:49 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:53:50 ERROR Task:33 - start date is in the past
+2023-03-29 18:54:45 INFO  Main:36 - saved data reading
+2023-03-29 18:54:45 INFO  Main:41 - application start
+2023-03-29 18:54:46 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:54:47 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:54:49 ERROR Task:33 - start date is in the past
+2023-03-29 18:56:22 INFO  Main:36 - saved data reading
+2023-03-29 18:56:22 INFO  Main:41 - application start
+2023-03-29 18:56:22 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:56:25 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:57:25 INFO  Main:36 - saved data reading
+2023-03-29 18:57:25 INFO  Main:41 - application start
+2023-03-29 18:57:25 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:57:29 INFO  NewEditController:91 - new/edit window initializing
+2023-03-29 18:58:29 INFO  Main:36 - saved data reading
+2023-03-29 18:58:29 INFO  Main:41 - application start
+2023-03-29 18:58:29 INFO  Controller:75 - Main controller initializing
+2023-03-29 18:58:32 INFO  NewEditController:91 - new/edit window initializing
