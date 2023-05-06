@@ -1,0 +1,10 @@
+
+g
+java:S1301Q"KReplace this "switch" statement by "if" statements to increase readability.(¯ßð8°Ñžƒð0
+=	java:S131Q""Add a default case to this switch.(¯ßð8áÑžƒð0
+X	java:S125\"<This block of commented-out lines of code should be removed.(Ô€‚’8âÑžƒð0
+W
+java:S2209n"5Change this instance-reference to a static reference.(¹†³¹þÿÿÿÿ8äÑžƒð0
+W
+java:S2209u"5Change this instance-reference to a static reference.(éÊº²üÿÿÿÿ8åÑžƒð0
+[	java:S106×"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ8óÑžƒð0
