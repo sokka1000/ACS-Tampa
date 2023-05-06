@@ -9,16 +9,15 @@ import tasks.services.TasksService;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TaskTest {
+class ServiceTest {
 
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
     @Test
-    void getAllTests() throws ParseException {
+    void getAllTasksTest() throws ParseException {
         String description = "alabala";
         Date dateStart = sdf.parse("2023-09-10 08:00");
         Date dateEnd = sdf.parse("2023-09-11 09:00");

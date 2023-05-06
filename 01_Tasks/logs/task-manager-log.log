@@ -302,3 +302,17 @@
 2023-05-06 09:15:45 ERROR Task:67 - start date is in the past
 2023-05-06 09:15:46 ERROR Task:51 - start date is in the past
 2023-05-06 09:15:46 ERROR Task:46 - time below bound
+2023-05-06 09:45:04 ERROR Task:71 - interval < than 1
+2023-05-06 09:45:04 ERROR Task:67 - start date is in the past
+2023-05-06 09:45:04 ERROR Task:51 - start date is in the past
+2023-05-06 09:45:04 ERROR Task:46 - time below bound
+2023-05-06 09:46:54 ERROR Task:71 - interval < than 1
+2023-05-06 09:46:54 ERROR Task:67 - start date is in the past
+2023-05-06 09:46:54 ERROR Task:67 - start date is in the past
+2023-05-06 09:46:55 ERROR Task:51 - start date is in the past
+2023-05-06 09:46:55 ERROR Task:46 - time below bound
+2023-05-06 09:47:03 ERROR Task:71 - interval < than 1
+2023-05-06 09:47:03 ERROR Task:67 - start date is in the past
+2023-05-06 09:47:03 ERROR Task:67 - start date is in the past
+2023-05-06 09:47:04 ERROR Task:51 - start date is in the past
+2023-05-06 09:47:04 ERROR Task:46 - time below bound

@@ -17,7 +17,5 @@ f
 6src/main/java/tasks/controller/TaskInfoController.java,9\9\99b511d75f317e72fa25245b579d48cb3d074646
 W
 'src/main/java/tasks/model/TaskList.java,f\c\fc2a13256c261b5abd00e9188b5f42e29358bf6e
-`
-0src/test/java/tasks/model/ArrayTaskListTest.java,b\b\bb3e361b5340906294280c0a5d14d44253f55be2
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
