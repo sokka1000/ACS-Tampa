@@ -9,8 +9,22 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+
 public class Task implements Serializable, Cloneable {
     private String description;
+
+    public void setStart(Date start) {
+        this.start = start;
+    }
+
+    public void setEnd(Date end) {
+        this.end = end;
+    }
+
+    public void setInterval(int interval) {
+        this.interval = interval;
+    }
+
     private Date start;
     private Date end;
     private int interval;
@@ -18,6 +32,10 @@ public class Task implements Serializable, Cloneable {
 
     private static final Logger log = Logger.getLogger(Task.class.getName());
     private  final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+    public Task() {
+
+    }
 
     public  SimpleDateFormat getDateFormat(){
         return sdf;
@@ -38,6 +56,7 @@ public class Task implements Serializable, Cloneable {
         this.end = time;
         this.interval = 0;
     }
+
     public Task(String description, Date start, Date end, int interval){
         if (start.getTime() < 0 || end.getTime() < 0) {
             log.error("time below bound");
@@ -127,7 +146,7 @@ public class Task implements Serializable, Cloneable {
             if (current.before(start)){
                 return start;
             }
-            if ( !current.before(end) && (!current.after(end)) && f2(current,timeAfter,timeBefore)!=null )
+            if ( (current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end)) && f2(current,timeAfter,timeBefore)!=null )
             {
                     return f2(current,timeAfter,timeBefore);
 

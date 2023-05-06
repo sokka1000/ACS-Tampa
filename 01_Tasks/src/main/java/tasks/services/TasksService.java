@@ -11,9 +11,19 @@ import java.util.Date;
 public class TasksService {
 
     private ArrayTaskList tasks;
+   private TasksOperations tasksOps;
+
 
     public TasksService(ArrayTaskList tasks){
         this.tasks = tasks;
+
+    }
+    public TasksService(ArrayTaskList tasks,TasksOperations tasksOps){
+        this.tasks = tasks;
+        this.tasksOps= tasksOps;
+    }
+    public void setTasksOperations(TasksOperations tasksOperations){
+        this.tasksOps=tasksOperations;
     }
 
     public ObservableList<Task> getObservableList(){
@@ -42,8 +52,9 @@ public class TasksService {
     }
 
     public Iterable<Task> filterTasks(Date start, Date end){
-        TasksOperations tasksOps = new TasksOperations(getObservableList());
+        //TasksOperations tasksOps = new TasksOperations(getObservableList());
         Iterable<Task> filtered = tasksOps.incoming(start,end);
+
         //Iterable<Task> filtered = tasks.incoming(start, end);
 
         return filtered;
