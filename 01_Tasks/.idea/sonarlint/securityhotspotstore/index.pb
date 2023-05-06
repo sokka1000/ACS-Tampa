@@ -17,8 +17,6 @@ W
 'src/main/java/tasks/model/TaskList.java,f\c\fc2a13256c261b5abd00e9188b5f42e29358bf6e
 f
 6src/main/java/tasks/controller/TaskInfoController.java,9\9\99b511d75f317e72fa25245b579d48cb3d074646
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ]
 -src/main/java/tasks/services/DateService.java,b\a\ba27869b1e0ea8fe162ea3b4618a07816f29da05
 e
