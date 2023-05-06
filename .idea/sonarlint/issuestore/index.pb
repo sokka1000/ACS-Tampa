@@ -7,5 +7,3 @@ a
 101_Tasks/src/main/java/tasks/services/TaskIO.java,2\f\2f5c38d4a3ce1bf47458567833b31584f201eb8a
 n
 >01_Tasks/src/main/java/tasks/controller/NewEditController.java,c\c\ccaa8fc2c0a70f23287e65816b2331517039f8e2
-i
-901_Tasks/src/test/java/tasks/model/ArrayTaskListTest.java,9\1\914f25dea2186f14dbcc63b5c210afbaa34a7ad4
