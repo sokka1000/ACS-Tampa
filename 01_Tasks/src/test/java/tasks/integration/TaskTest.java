@@ -72,9 +72,10 @@ class TaskTest {
         Iterable<Task> taskIterable = tasksService.filterTasks(dateStartIncoming, dateEndIncoming);
 
         int count = 0;
-        for (Task task : taskIterable)
+        for (Task task : taskIterable) {
             count++;
-
+                assertEquals(task,task1);
+        }
 
         assertEquals(count, 1);
 
